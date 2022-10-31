@@ -17,7 +17,7 @@ class EnumeratorSeeder extends Seeder
     {
         //
         Enumerator::factory(1)->state(new sequence(
-            ['f_name' => "Abel",'m_name' => 'Tiezazu','l_name' => "Berhe",'user_name' => 'abel@census.er','enum_area' => '0'],
+            ['f_name' => "Abel",'m_name' => 'Tiezazu','l_name' => "Berhe",'user_name' => 'abel@census.er','enum_area' => '1'],
       
         ))->create();
     }
