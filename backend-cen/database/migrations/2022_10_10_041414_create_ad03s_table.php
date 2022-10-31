@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        //ተወሳኪ_ሓበሬታ
         Schema::create('ad03s', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('residence_id');//area id
@@ -21,7 +22,7 @@ return new class extends Migration
             $table->string('ad03003');  //ጎደና
             $table->string('ad03004');  //ቁጽሪ_ገዛ
             $table->string('ad03005');  //ቁጽሪ_መለለዪ_ስድራ
-            $table->string('ad03006');  //ብዝሒ_ስድራቤት
+            $table->integer('ad03006');  //ብዝሒ_ስድራቤት
             $table->timestamps();
         });
     }

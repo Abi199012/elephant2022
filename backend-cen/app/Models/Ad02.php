@@ -32,4 +32,9 @@ class Ad02 extends Model
     {
         return $this->hasOne(Ad03::class, 'residence_id', 'id');
     }
+
+    public function name02002()
+    {
+        return $this->belongsTo(Ref_07::class, 'ad02002', 'id');
+    }
 }

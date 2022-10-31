@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FamilyController;
+use App\Http\Controllers\FamilyIdController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\SiteController;
 
@@ -201,11 +201,11 @@ Route::apiResource('ref65',Ref65Controller::class);
 Route::apiResource('ref66',Ref66Controller::class);
 Route::apiResource('ref67',Ref67Controller::class);
 
-Route::apiResource('family',FamilyController::class);
+
 
 Route::apiResource('country',CountryCountroller::class);
 
-Route::apiResource('familyid',TestController::class);
+Route::apiResource('familyid',FamilyIdController::class);
 
 Route::apiResource('storemegadata',StoreMegaDataController::class);
 Route::apiResource('personaldata',PersonalIdController::class);
@@ -219,7 +219,9 @@ Route::apiResource('enumlocation', EnumLocationController::class);
 
 Route::get('connection', [SiteController::class,'checkConnection']);
 
-Route::get('testapi', [App\Http\Controllers\Ad10Controller::class,'index']);
+Route::get('testapi', [App\Http\Controllers\Ad15Controller::class,'index']);
+Route::get('familytest', [App\Http\Controllers\FamilyTestController::class,'index']);
+Route::get('check', [App\Http\Controllers\CheckEnumController::class,'checkenum']);
 
 
 

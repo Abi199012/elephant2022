@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad47Resource;
 use App\Models\Ad47;
 use App\Http\Requests\StoreAd47Request;
 use App\Http\Requests\UpdateAd47Request;
@@ -16,6 +16,7 @@ class Ad47Controller extends Controller
     public function index()
     {
         //
+        return Ad47Resource::collection(Ad47::all());
     }
 
     /**

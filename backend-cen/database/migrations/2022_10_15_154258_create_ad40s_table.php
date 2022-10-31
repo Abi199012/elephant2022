@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
 
-        // ኣገልጉሎት ዝፈጸመ
+        // ኣገልጉሎት_ዝፈጸመ
         Schema::create('ad40s', function (Blueprint $table) {
             $table->id();
             $table->string('personal_id')->unique();//personal_id

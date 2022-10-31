@@ -15,12 +15,12 @@ class Ad02Resource extends JsonResource
     public function toArray($request)
     {
         return [
-            'area_id'=>$this->area_id,
-            'ad02002'=>$this->ad02002,
+            // 'area_id'=>$this->area_id,
+            'ad02002'=>$this->name02002->ref_07002,
             'ad02003'=>$this->ad02003,
             'ad02004'=>$this->ad02004,
             'ad02005'=>$this->ad02005,
-            'addressThree'=> new Ad03Resource($this->ad03s),
+            'ተወሳኪ_ሓበሬታ'=> new Ad03Resource($this->ad03s),
         ];
     }
 }

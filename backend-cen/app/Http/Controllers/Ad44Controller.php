@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\Ad44Resource;
 use App\Models\Ad44;
 use App\Http\Requests\StoreAd44Request;
 use App\Http\Requests\UpdateAd44Request;
@@ -16,6 +17,7 @@ class Ad44Controller extends Controller
     public function index()
     {
         //
+        return Ad44Resource::collection(Ad44::all());
     }
 
     /**

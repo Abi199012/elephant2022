@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        //ስድራቤትካ_ዘይሕርሻዊ_ንጥፈታት_ዝተኣሳሰር_ትነጥፍዶ
         Schema::create('ad48s', function (Blueprint $table) {
             $table->id();
             $table->string('family_id',60);

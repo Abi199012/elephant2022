@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad42Resource;
 use App\Models\Ad42;
 use App\Http\Requests\StoreAd42Request;
 use App\Http\Requests\UpdateAd42Request;
@@ -16,6 +16,7 @@ class Ad42Controller extends Controller
     public function index()
     {
         //
+        return Ad42Resource::collection(Ad42::all());
     }
 
     /**

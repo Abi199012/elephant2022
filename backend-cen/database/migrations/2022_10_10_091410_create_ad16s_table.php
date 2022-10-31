@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('personal_id')->unique();//personal_id
             $table->foreign('personal_id')->references('personal_id')->on('personal_ids')->onDelete('cascade')->onUpdate('cascade');
             $table->string('ad16002');//ዝለዓለ_ደረጃ_ትምህርቲ_id
-            $table->date('ad16003');//ዝለዓለ_ደረጃ_ትምህርቲ_ ዝተመርቅካሉ ዕለት
+            $table->string('ad16003');//ዝለዓለ_ደረጃ_ትምህርቲ_ ዝተመርቅካሉ ዕለት
             $table->timestamps();
         });
     }

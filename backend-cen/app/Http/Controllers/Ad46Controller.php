@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad46Resource;
 use App\Models\Ad46;
 use App\Http\Requests\StoreAd46Request;
 use App\Http\Requests\UpdateAd46Request;
@@ -16,6 +16,7 @@ class Ad46Controller extends Controller
     public function index()
     {
         //
+        return Ad46Resource::collection(Ad46::all());
     }
 
     /**

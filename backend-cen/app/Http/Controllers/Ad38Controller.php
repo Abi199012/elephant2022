@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Resources\Ad38Resource;
 
 use App\Models\Ad38;
 use App\Http\Requests\StoreAd38Request;
@@ -16,6 +17,7 @@ class Ad38Controller extends Controller
     public function index()
     {
         //
+        return Ad38Resource::collection(Ad38::all());
     }
 
     /**

@@ -24,10 +24,11 @@ return new class extends Migration
             $table->string('ad08003');//ቁጽሪ_ክፍልታት
             $table->integer('ad08004');//ናይ_ውልቂ_id
             $table->integer('ad08005');//ክራይ_id
-            $table->integer('ad08006');//ባጤራ_id
-            $table->integer('ad08007');//ጽሬት_ዝስተ_ማይ
-            $table->integer('ad08008');//ካበይ_ትረክብ
-            $table->integer('ad08009');//ዓይነት_ዓይኒ_ምድሪ
+            $table->integer('ad08006');//ወርሓዊ_ክፍሊት
+            $table->integer('ad08007');//ባጤራ_id
+            $table->integer('ad08008');//ጽሬት_ዝስተ_ማይ
+            $table->integer('ad08009');//ካበይ_ትረክብ
+            $table->integer('ad08010');//ዓይነት_ዓይኒ_ምድሪ
            
             $table->timestamps();
         });

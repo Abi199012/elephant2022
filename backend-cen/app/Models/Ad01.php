@@ -40,4 +40,31 @@ class Ad01 extends Model
     {
         return $this->hasOne(Ad02::class, 'area_id', 'id');
     }
+
+
+    public function name01002()
+    {
+        return $this->belongsTo(Ref_01::class, 'ad01002', 'id');
+    }
+    public function name01003()
+    {
+        return $this->belongsTo(Ref_02::class, 'ad01003', 'id');
+    }
+    public function name01004()
+    {
+        return $this->belongsTo(Ref_03::class, 'ad01004', 'id');
+    }
+
+    public function name01005()
+    {
+        return $this->belongsTo(Ref_04::class, 'ad01005', 'id');
+    }
+    public function name01006()
+    {
+        return $this->belongsTo(Ref_05::class, 'ad01006', 'id');
+    }
+    public function name01007()
+    {
+        return $this->belongsTo(Ref_06::class, 'ad01007', 'id');
+    }
 }

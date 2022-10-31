@@ -20,9 +20,9 @@ class Ad11 extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function ad11()
-    {
-        return $this->belongsTo(PersonalId::class, 'persona_id', 'personal_id');
-    }
+    // public function ad11()
+    // {
+    //     return $this->belongsTo(PersonalId::class, 'persona_id', 'personal_id');
+    // }
 
 }

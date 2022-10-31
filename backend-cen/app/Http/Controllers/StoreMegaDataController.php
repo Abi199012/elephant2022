@@ -16,6 +16,7 @@ use App\Http\Resources\CountryResource;
 use Illuminate\Support\Facades\DB;
 use JetBrains\PhpStorm\Language;
 
+
 class StoreMegaDataController extends Controller
 {
     /**
@@ -137,10 +138,11 @@ class StoreMegaDataController extends Controller
                     'ad08003' => $p4Datastore['ቁጽሪ_ክፍልታት'],
                     'ad08004' => $p4Datastore['ናይ_ውልቂ_id'],
                     'ad08005' => $p4Datastore['ክራይ_id'],
-                    'ad08006' => $p4Datastore['ባጤራ_id'],
-                    'ad08007' => $p4Datastore['ጽሬት_ዝስተ_ማይ'],
-                    'ad08008' => $p4Datastore['ካበይ_ትረክብ'],
-                    'ad08009' => $p4Datastore['ዓይነት_ዓይኒ_ምድሪ'],
+                    'ad08006' => $p4Datastore['ወርሓዊ_ክፍሊት'],
+                    'ad08007' => $p4Datastore['ባጤራ_id'],
+                    'ad08008' => $p4Datastore['ጽሬት_ዝስተ_ማይ'],
+                    'ad08009' => $p4Datastore['ካበይ_ትረክብ'],
+                    'ad08010' => $p4Datastore['ዓይነት_ዓይኒ_ምድሪ'],
                 ]);
 
 //ቀዋምን_ዘይቀዋምን ንብረት
@@ -170,6 +172,8 @@ class StoreMegaDataController extends Controller
                             'ad26006' => $p10_data['ልዕሊ_ሓደ_ዓመት_ክሳብ_ሰለስተ_ዓመት_ኣን'],
                             'ad26007' => $p10_data['ልዕሊ_ሰለስተ_ዓመት_ተባ'],
                             'ad26008' => $p10_data['ልዕሊ_ሰለስተ_ዓመት_ኣን'],
+                            'ad26009' => $p10_data['ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ'],
+                            'ad26010' => $p10_data['ባጤራ_id'],
                         ]);
 
                         DB::table('ad27s')->insertOrIgnore([
@@ -189,6 +193,7 @@ class StoreMegaDataController extends Controller
 //ውጽኢት_አንስሳ
 if($p11Datastore['ውጽኢት_አንስሳ']){
 
+    
     foreach($p11Datastore['data'] as $p11_data){
         DB::table('ad28s')->insertOrIgnore([
             'family_id' => $family_id,
@@ -587,7 +592,7 @@ if($p19Datastore['ፍልሰት']){
                     DB::table('ad16s')->insertOrIgnore([
                         'personal_id' => $persoanl_id,
                         'ad16002' => $education['ዝለዓለ_ደረጃ_ትምህርቲ_id'],
-                        'ad16002' => $education['ዝተመረቐሉ_ዕለት'],
+                        'ad16003' => $education['ዝተመረቐሉ_ዕለት'],
 
                                 ]);
             if($education['ዝተጠርየ_ሞያ_ኣሎዶ']){

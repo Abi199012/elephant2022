@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad50Resource;
 use App\Models\Ad50;
 use App\Http\Requests\StoreAd50Request;
 use App\Http\Requests\UpdateAd50Request;
@@ -16,6 +16,7 @@ class Ad50Controller extends Controller
     public function index()
     {
         //
+        return Ad50Resource::collection(Ad50::all());
     }
 
     /**

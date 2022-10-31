@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad48Resource;
 use App\Models\Ad48;
 use App\Http\Requests\StoreAd48Request;
 use App\Http\Requests\UpdateAd48Request;
@@ -16,6 +16,7 @@ class Ad48Controller extends Controller
     public function index()
     {
         //
+        return Ad48Resource::collection(Ad48::all());
     }
 
     /**

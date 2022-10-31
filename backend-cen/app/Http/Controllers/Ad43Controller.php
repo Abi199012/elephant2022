@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad43Resource;
 use App\Models\Ad43;
 use App\Http\Requests\StoreAd43Request;
 use App\Http\Requests\UpdateAd43Request;
@@ -16,6 +16,7 @@ class Ad43Controller extends Controller
     public function index()
     {
         //
+        return Ad43Resource::collection(Ad43::all());
     }
 
     /**

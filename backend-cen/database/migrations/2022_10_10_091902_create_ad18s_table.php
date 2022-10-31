@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        //ኩነታት ስራሕ
+        //ኩነታት_ስራሕ
         Schema::create('ad18s', function (Blueprint $table) {
             $table->id();
             $table->string('personal_id')->unique();//personal_id
             $table->foreign('personal_id')->references('personal_id')->on('personal_ids')->onDelete('cascade')->onUpdate('cascade');
-            $table->integer('ad18002');//ኩነታት ስራሕ
-            $table->integer('ad18003');//ምንጪ ኣታዊ
+            $table->integer('ad18002');//ኩነታት_ስራሕ
+            $table->integer('ad18003');//ምንጪ_ኣታዊ
             $table->timestamps();
         });
     }

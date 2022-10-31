@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-       //
+       //ኩነታት_ዓይነት_ስራሕ
         Schema::create('ad21s', function (Blueprint $table) {
             $table->id();
             $table->string('personal_id')->unique();//personal_id

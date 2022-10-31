@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        //ዓይነት ገረብ
+        //ዓይነት_ገረብ
         Schema::create('ad32s', function (Blueprint $table) {
             $table->id();
             $table->string('family_id',60);

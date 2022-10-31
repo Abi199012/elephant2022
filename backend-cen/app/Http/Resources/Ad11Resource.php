@@ -14,6 +14,8 @@ class Ad11Resource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'ad11002'=>$this->ad11002,
+        ];
     }
 }

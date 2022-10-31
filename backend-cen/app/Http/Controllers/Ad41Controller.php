@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad41Resource;
 use App\Models\Ad41;
 use App\Http\Requests\StoreAd41Request;
 use App\Http\Requests\UpdateAd41Request;
@@ -16,6 +16,7 @@ class Ad41Controller extends Controller
     public function index()
     {
         //
+        return Ad41Resource::collection(Ad41::all());
     }
 
     /**

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreign('family_id')->references('family_id')->on('family_ids')->onDelete('cascade')->onUpdate('cascade');
             $table->unsignedBigInteger('area_id');//area id
             $table->foreign('area_id')->references('id')->on('ad01s')->onDelete('cascade')->onUpdate('cascade');
-            $table->string("ad02002");//ኩነታት መንበሪ //ref
+            $table->integer("ad02002");//ኩነታት መንበሪ //ref
             $table->string("ad02003");//ቁጽሪ_ቅርጺ_ህንጻ
             $table->string("ad02004");//ቁጽሪ_ኣሃዱ_መንበሪ
             $table->string("ad02005");//ቁጽሪ_ስድራቤት

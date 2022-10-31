@@ -17,12 +17,12 @@ return new class extends Migration
             $table->id(); //id 
             $table->string('family_id',255);//family_id
             $table->foreign('family_id')->references('family_id')->on('family_ids')->onDelete('cascade')->onUpdate('cascade');
-            $table->string("ad01002");//ዞባ
-            $table->string("ad01003");//ንኡስ_ዞባ
-            $table->string("ad01004");//ከተማ
-            $table->string("ad01005");//ከባቢ
-            $table->string("ad01006");//ዓዲ
-            $table->string("ad01007");//ቁጽሪ መለለዪ ቦታ //reference 
+            $table->integer("ad01002");//ዞባ
+            $table->integer("ad01003");//ንኡስ_ዞባ
+            $table->integer("ad01004");//ከተማ
+            $table->integer("ad01005");//ከባቢ
+            $table->integer("ad01006");//ዓዲ
+            $table->integer("ad01007");//ቁጽሪ መለለዪ ቦታ //reference 
             $table->timestamps();
         });
     }

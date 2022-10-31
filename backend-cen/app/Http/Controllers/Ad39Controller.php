@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Resources\Ad39Resource;
 use App\Models\Ad39;
 use App\Http\Requests\StoreAd39Request;
 use App\Http\Requests\UpdateAd39Request;
@@ -16,6 +16,7 @@ class Ad39Controller extends Controller
     public function index()
     {
         //
+        return Ad39Resource::collection(Ad39::all());
     }
 
     /**

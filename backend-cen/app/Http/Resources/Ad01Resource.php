@@ -15,13 +15,13 @@ class Ad01Resource extends JsonResource
     public function toArray($request)
     {
         return [
-            'ad01002'=>$this->ad01002,
-            'ad01003'=>$this->ad01003,
-            'ad01004'=>$this->ad01004,
-            'ad01005'=>$this->ad01005,
-            'ad01006'=>$this->ad01006,
-            'ad01007'=>$this->ad01007,
-            'addressTwo'=>new Ad02Resource($this->ad02s),
+            'ad01002'=>$this->name01002->ref_01002,
+            'ad01003'=>$this->name01003->ref_02002,
+            'ad01004'=>$this->name01004->ref_03002,
+            'ad01005'=>$this->name01005->ref_04002,
+            'ad01006'=>$this->name01006->ref_05002,
+            'ad01007'=>$this->name01007->ref_06002,
+            'ኩነታት_መንበሪ'=>new Ad02Resource($this->ad02s),
         ];
     }
 }

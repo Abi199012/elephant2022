@@ -12,7 +12,7 @@ return new class extends Migration
      * @return void
      */
     public function up()
-    {
+    {  //መስርሒ_መግቢ_ጸዓት
         Schema::create('ad41s', function (Blueprint $table) {
             $table->id();
             $table->string('family_id',255);//family_id

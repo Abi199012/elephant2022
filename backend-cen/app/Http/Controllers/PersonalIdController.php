@@ -18,7 +18,7 @@ class PersonalIdController extends Controller
     {
         //
 
-        return PersonalIdResource::collection(PersonalId::get());
+        return PersonalIdResource::collection(PersonalId::all());
     }
 
     /**

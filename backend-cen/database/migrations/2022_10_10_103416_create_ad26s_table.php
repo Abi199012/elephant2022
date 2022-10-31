@@ -25,6 +25,8 @@ return new class extends Migration
             $table->integer('ad26006');  //ልዕሊ_ሓደ_ዓመት_ክሳብ_ሰለስተ_ዓመት_ኣን
             $table->integer('ad26007');  //ልዕሊ_ሰለስተ_ዓመት_ተባ
             $table->integer('ad26008');  //ልዕሊ_ሰለስተ_ዓመት_ኣን
+            $table->integer('ad26009');  //ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ
+            $table->integer('ad26010');  //ባጤራ_id
             $table->timestamps();  
         });
     }

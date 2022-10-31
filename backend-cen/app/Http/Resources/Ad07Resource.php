@@ -15,9 +15,9 @@ class Ad07Resource extends JsonResource
     public function toArray($request)
     {
         return [
-            'ad07002'=>$this->ad07002,
-            'ad07003'=>$this->ad07003,
-            'ad07004'=>$this->ad07004,
+            'ad07002'=>$this->name07002->ref_64002,
+            'ad07003'=>$this->name07003->ref_65002,
+            'ad07004'=>$this->ad07003,
             'ad07005'=>$this->ad07005,
             'ad07006'=>$this->ad07006,
             'ad07007'=>$this->ad07007,
