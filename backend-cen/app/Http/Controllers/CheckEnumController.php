@@ -16,17 +16,19 @@ class CheckEnumController extends Controller
      
         $usernameDetails = Enumerator::where('user_name', '=', $username)->first();
 
-        return $enumname['user_name'];
-        // if ($usernameDetails === null) {
+        // return $enumname['user_name'];
+        if ($usernameDetails === null) {
 
-        //     return "this is ur data" .$enumname;
-        //  } else {
-        //     $enumalldata = Enumerator::where('user_name','=',$username)->get();
-        //     return $enumalldata;
-        // }
+            return "this is ur data" .$enumname;
+         } else {
+            $enumalldata = Enumerator::where('user_name','=',$username)->get();
+            return $enumalldata;
+        }
      
 
         
 
     }
+
+
 }
