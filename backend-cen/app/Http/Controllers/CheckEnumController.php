@@ -10,17 +10,20 @@ class CheckEnumController extends Controller
 
     public function checkenum(Request $enumname){
 
+      
+
         $username = $enumname['user_name'];
      
         $usernameDetails = Enumerator::where('user_name', '=', $username)->first();
 
-        if ($usernameDetails === null) {
+        return $enumname['user_name'];
+        // if ($usernameDetails === null) {
 
-            return "not registerd";
-         } else {
-            $enumalldata = Enumerator::where('user_name','=',$username)->get();
-            return $enumalldata;
-        }
+        //     return "this is ur data" .$enumname;
+        //  } else {
+        //     $enumalldata = Enumerator::where('user_name','=',$username)->get();
+        //     return $enumalldata;
+        // }
      
 
         
