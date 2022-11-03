@@ -16,7 +16,7 @@ class Ad13Resource extends JsonResource
     {
         return [
             // 'personal_id'=>$this->personal_id,
-            'ad13002'=>$this->ad13002
+            'ad13002'=>$this->name13002->ref_67002,
         ];
     }
 }

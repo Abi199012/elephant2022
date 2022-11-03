@@ -40,6 +40,7 @@ class FamilyIdController extends Controller
     public function show($id)
     {
         //
+        return(FamilyId::where('family_id', $id)->get());
     }
 
     /**

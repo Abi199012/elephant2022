@@ -15,7 +15,7 @@ class Ad48Resource extends JsonResource
     public function toArray($request)
     {
         return [
-            'ad48002'=>$this->ad48002, 
+            'ad48002'=>$this->name48002->ref_27002, 
         ];
     }
 }

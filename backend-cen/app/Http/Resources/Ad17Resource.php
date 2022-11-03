@@ -15,10 +15,10 @@ class Ad17Resource extends JsonResource
     public function toArray($request)
     {
         return [
-            'ad17002'=>$this->ad17002,
-            'ad17003'=>$this->ad17003,
+            'ad17002'=>$this->name17002->ref_35002,
+            'ad17003'=>$this->name17003->ref_36002,
             'ad17004'=>$this->ad17004,
-            'ad17005'=>$this->ad17005,
+            'ad17005'=>$this->name17005->ref_37002,
         ];
     }
 }

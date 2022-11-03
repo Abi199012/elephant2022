@@ -20,4 +20,9 @@ class Ad13 extends Model
         return $this->belongsTo(Ref_67::class, 'ad13002', 'id');
     }
 
+                      public function name13002()
+    {
+        return $this->belongsTo(Ref_67::class, 'ad13002', 'id');
+    }
+
 }

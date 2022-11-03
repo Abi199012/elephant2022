@@ -13,4 +13,9 @@ class Ad14 extends Model
         'personal_id',
         'ad14002'
     ];
+
+                          public function name14002()
+    {
+        return $this->belongsTo(Ref_31::class, 'ad14002', 'id');
+    }
 }

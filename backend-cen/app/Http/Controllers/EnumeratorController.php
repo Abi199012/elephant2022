@@ -37,7 +37,7 @@ class EnumeratorController extends Controller
             return new EnumeratorResource($data);
 
         } catch(\Exception $exception) {
-            // throw new HttpException(400, "Invalid data -");?
+            throw new HttpException(400, "Invalid data -");
             return "dddddd";
         }
     }
@@ -48,11 +48,13 @@ class EnumeratorController extends Controller
      * @param  \App\Models\Enumerator  $enumerator
      * @return \Illuminate\Http\Response
      */
-    public function show(Enumerator $enumerator)
+    public function show($enumerator)
     {
         //
-        $data = Enumerator::findorfail($enumerator);
-        return new EnumeratorResource($data);
+        // $data = Enumerator::findorfail($enumerator);
+        // return EnumeratorResource::collection($data);
+
+        return new EnumeratorResource(Enumerator::findorfail($enumerator));
     }
 
     /**

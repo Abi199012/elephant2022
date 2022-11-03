@@ -16,7 +16,7 @@ class Ad44Resource extends JsonResource
     {
         return [
             // 'personal_id'=>$this->personal_id,
-            'ad44002'=>$this->ad44002
+            'ad44002'=>$this->name44002->ref_32002,
         ];
     }
 }

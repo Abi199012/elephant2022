@@ -211,7 +211,7 @@ Route::apiResource('storemegadata',StoreMegaDataController::class);
 Route::apiResource('personaldata',PersonalIdController::class);
 Route::apiResource('ssn',SsnDataController::class);
 
-Route::apiResource('megadata', MegadataController::class);
+// Route::apiResource('megadata', MegadataController::class);
 
 Route::apiResource('enumerators', EnumeratorController::class);
 

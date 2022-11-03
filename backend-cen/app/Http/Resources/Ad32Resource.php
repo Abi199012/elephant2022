@@ -22,7 +22,7 @@ class Ad32Resource extends JsonResource
             'ad32006'=>$this->ad32006,       
             'ad32007'=>$this->ad32007,       
             'ad32008'=>$this->ad32008,       
-            'ad32009'=>$this->ad32009,       
+            'ad32009'=>$this->name32009->ref_63002,       
         ];
     }
 }

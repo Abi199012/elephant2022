@@ -41,6 +41,7 @@ class PersonalIdController extends Controller
     public function show($id)
     {
         //
+        return  PersonalIdResource::collection(PersonalId::where('personal_id', $id)->get());
     }
 
     /**

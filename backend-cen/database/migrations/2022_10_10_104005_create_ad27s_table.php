@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('family_id',60);
             $table->foreign('family_id')->references('family_id')->on('family_ids')->onDelete('cascade')->onDelete('cascade');
             $table->integer('ad27002');  //ዝተሸጠ_መጠን_ጥሪት
-            $table->integer('ad27003');  //ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ
-            $table->integer('ad27004');  //ኣብ_ካልእ_መዓላ_ዝወዓለ_መጠን
-            // $table->integer('ad27005');  //መጠን_ዝተርኽበ_ምህርቲ
+            $table->integer('ad27003');  //ኣብ_ካልእ_መዓላ_ዝወዓለ_መጠን
+            $table->integer('ad27004');  //ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ
+            $table->integer('ad27005');  //ባጤራ_idp
             $table->timestamps();
         });
     }

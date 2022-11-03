@@ -13,4 +13,8 @@ class Ad15 extends Model
         'personal_id',
         'ad15002'
     ];
+                                public function name15002()
+    {
+        return $this->belongsTo(Ref_33::class, 'ad15002', 'id');
+    }
 }

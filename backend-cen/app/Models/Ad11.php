@@ -14,6 +14,10 @@ class Ad11 extends Model
         'ad11002',
     ];
 
+                   public function name11002()
+    {
+        return $this->belongsTo(Ref_28::class, 'ad11002', 'id');
+    }
 
     /**
      * Get the ad11 that owns the Ad11

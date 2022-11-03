@@ -22,8 +22,8 @@ class Ad26Resource extends JsonResource
             'ad26006'=>$this->ad26006,
             'ad26007'=>$this->ad26007,
             'ad26008'=>$this->ad26008,       
-            'ad26009'=>$this->ad26009,       
-            'ad26010'=>$this->name26010->ref_63002,       
+            // 'ad26009'=>$this->ad26009,       
+            // 'ad26010'=>$this->name26010->ref_63002,       
         ];
     }
 }

@@ -16,6 +16,8 @@ class Ad39Resource extends JsonResource
     {
     return [
         'ad39002'=>$this->name39002->ref_16002, 
+          'ኣገልጉሎት_ዘይፈጸመ'=>new Ad39Resource($this->ad39),
+            'ኣገልጉሎት_ዝፈጸመ'=>new Ad40Resource($this->ad40),
     ];
     }
     

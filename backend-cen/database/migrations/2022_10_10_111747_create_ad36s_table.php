@@ -26,7 +26,7 @@ return new class extends Migration
             $table->integer('ad36007');//ዝሞተሉ_ዕድመ
             $table->string('ad36008');//ስራሕ
             $table->integer('ad36009');//ምኽንያት_ሞት ref
-            $table->string('ad36010');//ኣብ_ሕርሲ_ወይ_2_ወርሒ_ድሕሪ_ሕርሲ_ድያ_ሞይታ
+            $table->integer('ad36010');//ኣብ_ሕርሲ_ወይ_2_ወርሒ_ድሕሪ_ሕርሲ_ድያ_ሞይታ
             $table->timestamps();
         });
     }

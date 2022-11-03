@@ -19,11 +19,10 @@ class Ad12 extends Model
 
 
 
-    
-    // public function ad12kkk()
-    // {
-    //     return $this->belongsTo(PersonalId::class, 'persona_id', 'personal_id');
-    // }
+                   public function name12002()
+    {
+        return $this->belongsTo(Ref_66::class, 'ad12002', 'id');
+    }
 
 }
 

@@ -18,6 +18,7 @@ class Ad27Resource extends JsonResource
             'ad27002'=>$this->ad27002,
             'ad27003'=>$this->ad27003,
             'ad27004'=>$this->ad27004,       
+            'ad27005'=>$this->name27005->ref_63002,       
         ];
     }
 }

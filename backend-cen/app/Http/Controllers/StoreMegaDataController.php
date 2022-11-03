@@ -13,6 +13,7 @@ use App\Models\PersonalId;
 use App\Models\Country;
 use App\Helpers\Helper;
 use App\Http\Resources\CountryResource;
+use App\Models\Family;
 use Illuminate\Support\Facades\DB;
 use JetBrains\PhpStorm\Language;
 
@@ -172,15 +173,16 @@ class StoreMegaDataController extends Controller
                             'ad26006' => $p10_data['ልዕሊ_ሓደ_ዓመት_ክሳብ_ሰለስተ_ዓመት_ኣን'],
                             'ad26007' => $p10_data['ልዕሊ_ሰለስተ_ዓመት_ተባ'],
                             'ad26008' => $p10_data['ልዕሊ_ሰለስተ_ዓመት_ኣን'],
-                            'ad26009' => $p10_data['ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ'],
-                            'ad26010' => $p10_data['ባጤራ_id'],
+                            // 'ad26009' => $p10_data['ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ'],
+                            // 'ad26010' => $p10_data['ባጤራ_id'],
                         ]);
 
                         DB::table('ad27s')->insertOrIgnore([
                             'family_id' => $family_id,
                             'ad27002' => $p10_data['ዝተሸጠ_መጠን_ጥሪት'],
-                            'ad27003' => $p10_data['ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ'],
-                            'ad27004' => $p10_data['ኣብ_ካልእ_መዓላ_ዝወዓለ_መጠን'],
+                            'ad27003' => $p10_data['ኣብ_ካልእ_መዓላ_ዝወዓለ_መጠን'],
+                            'ad27004' => $p10_data['ካብ_መሸጣ_ጥሪት_ዝተረኽበ_ኣታዊ_ብናቅፋ'],
+                            'ad27005' => $p10_data['ባጤራ_id'],
                             // 'ad27005' => $p10_data['መጠን_ዝተርኽበ_ምህርቲ'],
                         ]);
 
@@ -601,9 +603,9 @@ if($p19Datastore['ፍልሰት']){
                     DB::table('ad17s')->insertOrIgnore([
                         'personal_id' => $persoanl_id,
                         'ad17002' => $work_type['ዓይነት_ሞያ_id'],
-                        'ad17002' => $work_type['ብከመይ_ኣጥሪኻዮ_id'],
-                        'ad17003' => $work_type['ዓመታት_ስራሕ'],
-                        'ad17004' => $work_type['ሞያ_መዓርግ_id'],
+                        'ad17003' => $work_type['ብከመይ_ኣጥሪኻዮ_id'],
+                        'ad17004' => $work_type['ዓመታት_ስራሕ'],
+                        'ad17005' => $work_type['ሞያ_መዓርግ_id'],
                     ]);
                 }
 
@@ -690,9 +692,19 @@ if($p19Datastore['ፍልሰት']){
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show( $id)
     {
         //
+        // return view('user.profile', [
+        //     'user' => User::findOrFail($id)
+        // ]);
+
+
+
+        // $users = DB::table('family_ids')->where('family_id',[$fId])->get();
+        // $family = FamilyId::whereIn('family_id', [$fId])->get()();
+        return  FamilyIdResource::collection(FamilyId::where('family_id', $id)->get());
+    //    return new FamilyIdResource(FamilyId::where('family_id', $family_id)->get());
     }
 
     /**

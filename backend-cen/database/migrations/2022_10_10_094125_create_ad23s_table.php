@@ -19,11 +19,11 @@ return new class extends Migration
             $table->id();
             $table->string('personal_id')->unique();//personal_id
             $table->foreign('personal_id')->references('personal_id')->on('personal_ids')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('ad23002');//ብጎደሎ_ዋጋ_ዝገዛእካዮ
-            $table->string('ad23003');//መግቢ_ከም_ደሞዝካ
-            $table->string('ad23004');//ካብ_ናጻ_ገዛ_ክራይ_ትረኽቦ
-            $table->string('ad23005');//ክዳውንቲ_ከም_ሓገዝ_ዝረኸብካዮ
-            $table->string('ad23006');//ካልእ_ትረኽቦ_ሓገዝ
+            $table->integer('ad23002');//ብጎደሎ_ዋጋ_ዝገዛእካዮ
+            $table->integer('ad23003');//መግቢ_ከም_ደሞዝካ
+            $table->integer('ad23004');//ካብ_ናጻ_ገዛ_ክራይ_ትረኽቦ
+            $table->integer('ad23005');//ክዳውንቲ_ከም_ሓገዝ_ዝረኸብካዮ
+            $table->integer('ad23006');//ካልእ_ትረኽቦ_ሓገዝ
             $table->timestamps();
         });
     }

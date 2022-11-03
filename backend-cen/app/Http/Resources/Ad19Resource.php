@@ -17,7 +17,7 @@ class Ad19Resource extends JsonResource
         return [
             'ad19002'=>$this->ad19002,
             'ad19003'=>$this->ad19003,
-            'ad19004'=>$this->ad19004,
+            'ad19004'=>$this->name19004->ref_43002,
         
         ];
     }
