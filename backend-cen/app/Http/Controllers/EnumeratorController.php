@@ -53,6 +53,8 @@ class EnumeratorController extends Controller
         //
         // $data = Enumerator::findorfail($enumerator);
         // return EnumeratorResource::collection($data);
+         // get the shark
+    
 
         return new EnumeratorResource(Enumerator::findorfail($enumerator));
     }
@@ -67,6 +69,8 @@ class EnumeratorController extends Controller
     public function update(UpdateEnumeratorRequest $request, $id)
     {
         //
+
+        // return $id;
         
         if (!$id) {
             # code...
@@ -87,11 +91,11 @@ class EnumeratorController extends Controller
      * @param  \App\Models\Enumerator  $enumerator
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Enumerator $id)
+    public function destroy($id)
     {
         //
 
-        $data = Enumerator::findorfail($id);
+        $data = Enumerator::find($id);
         $data ->delete();
         return ('Deleted Succesfully');
     }
