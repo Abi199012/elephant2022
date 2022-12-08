@@ -13,14 +13,14 @@ class CheckEnumController extends Controller
       $state = "";
 
         $username = $enumname['user_name'];
-     
+
         $usernameDetails = Enumerator::where('user_name', '=', $username)->first();
 
         // return $enumname['user_name'];
         if ($usernameDetails === null) {
             // $state = "false";
             $data['status'] = false;
-    
+
             return $data;
          } else {
             // $state = true;
@@ -33,9 +33,9 @@ class CheckEnumController extends Controller
 
             return $data;
         }
-     
 
-        
+
+
 
     }
 

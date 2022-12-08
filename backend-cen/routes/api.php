@@ -222,14 +222,3 @@ Route::get('connection', [SiteController::class,'checkConnection']);
 Route::get('testapi', [App\Http\Controllers\Ad15Controller::class,'index']);
 Route::get('familytest', [App\Http\Controllers\FamilyTestController::class,'index']);
 Route::post('check', [App\Http\Controllers\CheckEnumController::class,'checkenum']);
-
-
-
-
-
-
-
-
-
-
-

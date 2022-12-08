@@ -16,13 +16,14 @@ class Ref09Seeder extends Seeder
     public function run()
     {
         //
-        Ref_09::factory(6)->state(new sequence(
+        Ref_09::factory(7)->state(new sequence(
             ['ref_09002' => "ኤርትራዊ"],
             ['ref_09002' => "ኢትዮጵያዊ"],
             ['ref_09002' => "ሱዳናዊ"],
             ['ref_09002' => "የመናዊ"],
             ['ref_09002' => "ጁቡታዊ"],
             ['ref_09002' => "ኬንያዊ"],
+            ['ref_09002' => "somalawi"],
         ))->create();
     }
 }

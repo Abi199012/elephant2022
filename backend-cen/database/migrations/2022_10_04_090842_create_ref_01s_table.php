@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('ref_01002');
             $table->string('ref_01003');
+            $table->boolean('ref_01004')->default(1);
             $table->timestamps();
         });
     }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Resources\Ref01Resource;
+use App\Http\Resources\testprac;
 
 use App\Models\Ref_01;
 use Illuminate\Http\Request;
@@ -16,7 +17,7 @@ class Ref01Controller extends Controller
     public function index()
     {
         //
-        return Ref01Resource::collection(Ref_01::all());
+        return testprac::collection(Ref_01::all());
     }
 
     /**

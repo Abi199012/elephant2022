@@ -17,6 +17,7 @@ class Ref65Resource extends JsonResource
         return [
             'id' => $this->id,
             'ref_65002' => $this->ref_65002,
+            'ref_65003' => $this->ref_65003,
             ];
     }
 }

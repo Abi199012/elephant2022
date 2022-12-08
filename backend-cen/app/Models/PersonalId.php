@@ -101,6 +101,21 @@ class PersonalId extends Model
     {
         return $this->hasOne(Ad20::class, 'personal_id', 'personal_id');
     }
+    //ad51
+    public function ad51()
+    {
+        return $this->hasOne(Ad51::class, 'personal_id', 'personal_id');
+    }
+    //ad52
+    public function ad52()
+    {
+        return $this->hasOne(Ad52::class, 'personal_id', 'personal_id');
+    }
+    //ad53
+    public function ad53()
+    {
+        return $this->hasOne(Ad53::class, 'personal_id', 'personal_id');
+    }
     //ኩነታት_ዓይነት_ስራሕ
     public function ad21()
     {

@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ref_60s', function (Blueprint $table) { 
+        Schema::create('ref_60s', function (Blueprint $table) {
             $table->id();
             $table->string('ref_60002');
+            $table->boolean('ref_60003')->default(1);
             $table->timestamps();
         });
     }

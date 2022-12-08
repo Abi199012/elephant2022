@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('ref_53s', function (Blueprint $table) {
             $table->id();
             $table->string('ref_53002');
+            $table->boolean('ref_53003')->default(1);
             $table->timestamps();
         });
     }
